@@ -4,3 +4,5 @@
 /lib/forge-std
 /lib/openzeppelin-contracts
 /foundry.lock
+/cache
+/out
