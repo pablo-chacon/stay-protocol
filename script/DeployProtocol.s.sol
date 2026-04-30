@@ -13,7 +13,7 @@ import "../contracts/StayCore.sol";
  */
 contract DeployProtocol is Script {
   function run() external {
-    uint256 deployerKey = vm.envUint("DEPLOYER_KEY");
+    uint256 deployerKey = vm.envUint("PRIVATE_KEY");
     address protocolTreasury = vm.envAddress("PROTOCOL_TREASURY");
 
     vm.startBroadcast(deployerKey);

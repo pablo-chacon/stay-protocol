@@ -33,7 +33,7 @@ interface IEscrow {
 contract StayCore is EIP712 {
   using ECDSA for bytes32;
 
-  uint16  public constant PROTOCOL_FEE_BPS     = 50;      // 0.5%
+  uint16  public constant PROTOCOL_BPS     = 50;      // 0.5%
   uint256 public constant AUTO_RELEASE_DELAY   = 12 days; // 12 days
   uint16  public constant MAX_PLATFORM_FEE_BPS = 500;     // 5% cap for integrators
 
