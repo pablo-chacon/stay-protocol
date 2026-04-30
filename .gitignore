@@ -6,3 +6,5 @@
 /foundry.lock
 /cache
 /out
+/.env
+/broadcast

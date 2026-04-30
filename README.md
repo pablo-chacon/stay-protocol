@@ -1,7 +1,4 @@
-
----
-
-# **DeBNB Protocol**
+# **STAY Protocol**
 
 **Neutral Settlement Rail for Decentralized Accommodation**
 
@@ -9,7 +6,7 @@
 
 ## Legal Disclaimer
 
-This repository contains **general-purpose, open-source smart contracts** implementing the DeBNB Protocol.
+This repository contains **general-purpose, open-source smart contracts** implementing the STAY Protocol.
 
 The authors and contributors:
 
@@ -20,18 +17,18 @@ The authors and contributors:
 * do **not** arbitrate disputes, enforce policies, or intervene in settlements
 * are **not responsible** for deployments, integrations, bookings, stays, disputes, or real-world outcomes
 
-All deployments and integrations of DeBNB Protocol are performed **entirely at the risk of the deployer and the integrating application**.
+All deployments and integrations of STAY Protocol are performed **entirely at the risk of the deployer and the integrating application**.
 
 This software is provided **as-is**, without warranty of any kind, express or implied.
 The authors are **not liable** for any damages, losses, claims, or liabilities arising from the use, misuse, or failure of this software or any derivative work.
 
-By using, deploying, or interacting with DeBNB Protocol in any form, you accept full responsibility for compliance, operation, and outcomes.
+By using, deploying, or interacting with STAY Protocol in any form, you accept full responsibility for compliance, operation, and outcomes.
 
 ---
 
 ## Protocol Finality and Immutability
 
-**DeBNB Protocol is finished infrastructure.**
+**STAY Protocol is finished infrastructure.**
 
 The contracts in this repository are intentionally minimal, deterministic, and **final**.
 
@@ -50,9 +47,9 @@ All innovation, UX, compliance handling, arbitration, reputation systems, insura
 
 ---
 
-## DeBNB Protocol Overview
+## STAY Protocol Overview
 
-**DeBNB Protocol** is a neutral, production-ready settlement rail for peer-to-peer accommodation and lodging use cases.
+**STAY Protocol** is a neutral, production-ready settlement rail for peer-to-peer accommodation and lodging use cases.
 
 It enables trust-minimized settlement for short-term stays without relying on centralized platforms, custodians, or intermediaries.
 
@@ -60,7 +57,7 @@ It enables trust-minimized settlement for short-term stays without relying on ce
 
 Offer -> Booking -> Stay -> Settlement
 
-DeBNB is **platform-agnostic**, **custody-agnostic**, and **identity-agnostic**.
+STAY is **platform-agnostic**, **custody-agnostic**, and **identity-agnostic**.
 
 This repository contains **only immutable smart contracts and deployment scripts**.
 It intentionally excludes applications, UIs, APIs, search engines, ranking systems, compliance tooling, or dispute processes.
@@ -187,7 +184,7 @@ Funds **cannot be frozen** indefinitely.
 
 ## Disputes
 
-DeBNB Protocol **does not arbitrate disputes**.
+STAY Protocol **does not arbitrate disputes**.
 
 If a dispute exists, it must be resolved **off-chain**.
 
@@ -203,7 +200,7 @@ The protocol will not:
 
 ## NFT as Infrastructure (Not Speculation)
 
-DeBNB uses NFTs as **non-speculative infrastructure primitives**.
+STAY uses NFTs as **non-speculative infrastructure primitives**.
 
 An NFT serves as:
 
@@ -220,9 +217,9 @@ It does **not** represent:
 
 ---
 
-## Centralized Platforms vs DeBNB
+## Centralized Platforms vs STAY
 
-| Function        | Centralized Platforms | DeBNB Protocol |
+| Function        | Centralized Platforms | STAY Protocol |
 | --------------- | --------------------- | -------------- |
 | Custody         | Platform-controlled   | Trustless      |
 | Fees            | Mutable               | Immutable      |
@@ -249,7 +246,7 @@ It does **not** represent:
 
 ## Philosophy
 
-DeBNB Protocol is:
+STAY Protocol is:
 
 * Minimal
 * Permissionless
@@ -259,7 +256,7 @@ DeBNB Protocol is:
 It does not compete with platforms.
 It removes their necessity.
 
-Once deployed, **DeBNB does not need its author, maintainers, or any organization**.
+Once deployed, **STAY does not need its author, maintainers, or any organization**.
 
 It exists as infrastructure.
 

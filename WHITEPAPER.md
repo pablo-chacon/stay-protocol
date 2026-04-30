@@ -1,7 +1,6 @@
-
 ---
 
-# **DeBNB Protocol Whitepaper**
+# **STAY Protocol Whitepaper**
 
 **Neutral Settlement Infrastructure for Decentralized Accommodation**
 
@@ -9,13 +8,13 @@
 
 ## Abstract
 
-DeBNB Protocol is a minimal, immutable settlement rail for peer-to-peer accommodation.
+STAY Protocol is a minimal, immutable settlement rail for peer-to-peer accommodation.
 It provides trustless escrow, deterministic settlement, and time-bounded fund release without operating a platform, enforcing policies, or mediating disputes.
 
-DeBNB is not a marketplace, not a booking service, and not a governance system.
+STAY is not a marketplace, not a booking service, and not a governance system.
 It is infrastructure.
 
-Once deployed, DeBNB requires no operators, administrators, or maintainers.
+Once deployed, STAY requires no operators, administrators, or maintainers.
 Its behavior is fully defined by immutable smart contracts and Ethereum consensus.
 
 ---
@@ -37,15 +36,15 @@ This architecture creates systemic risks:
 * Participants are locked into platform governance
 * Market power concentrates over time
 
-DeBNB separates **settlement** from **platform behavior**.
+STAY separates **settlement** from **platform behavior**.
 
-By removing discretion, governance, and identity from the protocol layer, DeBNB enables open competition, voluntary coordination, and credible exit.
+By removing discretion, governance, and identity from the protocol layer, STAY enables open competition, voluntary coordination, and credible exit.
 
 ---
 
 ## 2. Design Principles
 
-DeBNB is built on five non-negotiable principles:
+STAY is built on five non-negotiable principles:
 
 1. **Neutrality**
    The protocol does not prefer, rank, or control participants.
@@ -88,7 +87,7 @@ All such concerns must be handled **off-chain** or **above** the protocol.
 
 ## 4. System Overview
 
-DeBNB consists of three immutable on-chain components:
+STAY consists of three immutable on-chain components:
 
 ### 4.1 StayCore
 
@@ -177,7 +176,7 @@ The protocol does not enforce business models, pricing strategies, or revenue di
 
 ## 7. Security Model
 
-DeBNB intentionally minimizes attack surface:
+STAY intentionally minimizes attack surface:
 
 * No admin roles
 * No upgrade hooks
@@ -209,13 +208,13 @@ They do **not** trust:
 * Arbitrators
 * The protocol author
 
-Once deployed, DeBNB does not require trust in any human actor.
+Once deployed, STAY does not require trust in any human actor.
 
 ---
 
 ## 9. Long-Term and Non-Standard Use Cases
 
-DeBNB is optimized for short-term accommodation.
+STAY is optimized for short-term accommodation.
 
 Long-term rentals, subscriptions, or complex payment schedules can be implemented **off-chain** by:
 
@@ -229,7 +228,7 @@ The protocol remains unchanged.
 
 ## 10. Comparison to Centralized Platforms
 
-| Dimension        | Centralized Platforms | DeBNB Protocol |
+| Dimension        | Centralized Platforms | STAY Protocol |
 | ---------------- | --------------------- | -------------- |
 | Custody          | Platform-controlled   | Trustless      |
 | Fees             | Mutable               | Immutable      |
@@ -243,7 +242,7 @@ The protocol remains unchanged.
 
 ## 11. Finality Statement
 
-DeBNB Protocol is **finished infrastructure**.
+STAY Protocol is **finished infrastructure**.
 
 It will not be upgraded, governed, or extended.
 
@@ -254,7 +253,7 @@ Ecosystems around it may.
 
 ## 12. Conclusion
 
-DeBNB provides a credible alternative to centralized accommodation platforms by removing discretion, custody, and governance from the settlement layer.
+STAY provides a credible alternative to centralized accommodation platforms by removing discretion, custody, and governance from the settlement layer.
 
 It does not promise fairness, safety, or convenience.
 
@@ -262,8 +261,7 @@ It promises **determinism, neutrality, and exit**.
 
 ---
 
-**DeBNB Protocol**
+**STAY Protocol**
 Neutral settlement, enforced by code.
 
 ---
-

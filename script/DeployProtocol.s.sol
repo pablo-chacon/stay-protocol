@@ -9,7 +9,7 @@ import "../contracts/StayCore.sol";
 /**
  * ENV:
  * - DEPLOYER_KEY (uint)
- * - PROTOCOL_TREASURY (address)   // your Safe
+ * - PROTOCOL_TREASURY (address)  
  */
 contract DeployProtocol is Script {
   function run() external {
@@ -18,7 +18,7 @@ contract DeployProtocol is Script {
 
     vm.startBroadcast(deployerKey);
 
-    PropertyRegistry registry = new PropertyRegistry("DeBNB Property Registry", "DEBNB-PROP");
+    PropertyRegistry registry = new PropertyRegistry("STAY Property Registry", "STAY-PROP");
     StayCore core = new StayCore(protocolTreasury);
 
     vm.stopBroadcast();

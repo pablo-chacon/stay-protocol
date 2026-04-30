@@ -21,7 +21,7 @@ interface IEscrow {
 
 /**
  * @title StayCore
- * @notice DeBNB: neutral settlement rail for short-stay rentals.
+ * @notice STAY: neutral settlement rail for short-stay rentals.
  *
  * Neutral-rail invariants:
  * - Protocol fee is immutable 0.5% (50 bps), hard-coded.
@@ -85,7 +85,7 @@ contract StayCore is EIP712 {
       "Settle(uint256 stayId,address pricePayee,address depositPayee,address platformTreasury,uint16 platformFeeBps,uint16 callerTipBps,uint256 nonce,uint256 deadline)"
     );
 
-  constructor(address protocolTreasury_) EIP712("DeBNB-Protocol", "1") {
+  constructor(address protocolTreasury_) EIP712("STAY-Protocol", "1") {
     require(protocolTreasury_ != address(0), "bad-treasury");
     protocolTreasury = protocolTreasury_;
 
@@ -206,7 +206,7 @@ contract StayCore is EIP712 {
     require(depositPayee != address(0) || S.deposit == 0, "bad-deposit-payee");
 
     require(callerTipBps < 10000, "bad-tip-bps");
-    require(uint32(callerTipBps) + uint32(S.platformFeeBps) + uint32(PROTOCOL_FEE_BPS) <= 10000, "total-bps");
+    require(uint32(callerTipBps) + uint32(S.platformFeeBps) + uint32(PROTOCOL_BPS) <= 10000, "total-bps");
 
     uint256 n = nonces[stayId];
 
@@ -236,7 +236,7 @@ contract StayCore is EIP712 {
       _priceLedger(stayId),
       pricePayee,
       S.platformTreasury, S.platformFeeBps,
-      protocolTreasury,   PROTOCOL_FEE_BPS,
+      protocolTreasury,   PROTOCOL_BPS,
       msg.sender,         callerTipBps
     );
 
@@ -260,7 +260,7 @@ contract StayCore is EIP712 {
     require(block.timestamp >= uint256(S.bookedAt) + AUTO_RELEASE_DELAY, "too-early");
 
     require(callerTipBps < 10000, "bad-tip-bps");
-    require(uint32(callerTipBps) + uint32(S.platformFeeBps) + uint32(PROTOCOL_FEE_BPS) <= 10000, "total-bps");
+    require(uint32(callerTipBps) + uint32(S.platformFeeBps) + uint32(PROTOCOL_BPS) <= 10000, "total-bps");
 
     uint256 n = nonces[stayId];
     nonces[stayId] = n + 1;
@@ -270,7 +270,7 @@ contract StayCore is EIP712 {
       _priceLedger(stayId),
       S.host,
       S.platformTreasury, S.platformFeeBps,
-      protocolTreasury,   PROTOCOL_FEE_BPS,
+      protocolTreasury,   PROTOCOL_BPS,
       msg.sender,         callerTipBps
     );
 
