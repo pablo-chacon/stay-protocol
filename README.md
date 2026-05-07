@@ -267,16 +267,6 @@ It exists as infrastructure.
 
 ---
 
-## License
-
-MIT License
-
-Copyright (c) 2025 Emil Karlsson
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
-
----
-
 ## Contact
 
 [pablo-chacon-ai@proton.me](mailto:pablo-chacon-ai@proton.me)
